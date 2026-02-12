@@ -1,5 +1,3 @@
 # BigQuerytagsatprojectlevel
-In real word, there could be multiple sources from which data comes to BQ. 
-Example, if there are datasets from source "ppt". 
-In this solution, we will "tag" datasets and share access to those tagged datasets only to users. 
-Example, ppt tagged dataset will be accessed by ppt AD group only. 
+Tag datasets with a value using terraform. Apply IAM condition to give access to AD group with a conditional tag.
+In this example, we have a tag called "ppt" and AD group of "PPT Users" , only this AD group should have access to datasets tagged with "ppt".
